@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Câu hỏi:"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="asdlfsadlff" />
+
+    <RadioGroup
+        android:id="@+id/rbg_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/rb_answer_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaa" />
+
+        <RadioButton
+            android:id="@+id/rb_answer_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaa" />
+
+        <RadioButton
+            android:id="@+id/rb_answer_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="aaa" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="64dp"
+        android:src="@drawable/ic_unchecked"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Kiểm tra"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+</LinearLayout>
